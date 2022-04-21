@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+
+
+.test {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 2;
+    justify-content: center;
+    background-color: #8abcbc;
+    gap: 15px;
+}
+
+.test div {
+    padding: 15px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+.left {
+    grid-column: 1/2;
+}
+
+.right {
+    grid-column: 2/2;
+}
+
+button {
+    padding: 30px 30px;
+    border-radius: 90px;
+    font-size: 16px;
+}
+
+button:hover {
+    border: solid 3px;
+    border-color: #8abcbc;
+    padding: 27px 27px;
+}
+
+/* button:focus {
+    background-color: #8abcbc;
+} */
+
+button:active {
+    background-color: #8abcbc;
+}
+
+   
+.controls {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: center;
+    gap: 15px;
+}
+
+.controls-icons {
+    max-width: 98px;
+    max-height: 98px;
+    pointer-events: none;
+}
+
+.choice-icons {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.test + .controls {
+    margin-top: 15px;
+}
