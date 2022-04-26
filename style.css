@@ -20,11 +20,30 @@ body {
     gap: 15px;
 }
 
-.test div {
-    padding: 15px;
+.header {
+    grid-column: 1/4;
+    padding: 15px 0;
+    background-color: #8abcbc;
+    justify-content: center;
+    
+    /* max-height: 50px; */
+}
+
+.header div {
     background-color: rgb(239, 239, 239);
-    border-radius: 20px;
-    margin: 15px 0;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.scoreBox {
+    display: flex;
+    justify-content: center;
+    /* align-items: cente; */
+}
+
+.numberIcon {
+    height: 40px;
+
 }
 
 .left {
@@ -55,6 +74,19 @@ button:active {
     background-color: #8abcbc;
 }
 
+.choice-box {
+    padding: 15px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 20px;
+    margin: 15px 0;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
    
 .controls {
     display: flex;
@@ -66,7 +98,6 @@ button:active {
 .controls-icons {
     max-width: 98px;
     max-height: 98px;
-    pointer-events: none;
 }
 
 .choice-icons {
@@ -76,4 +107,13 @@ button:active {
 
 .test + .controls {
     margin-top: 15px;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+.rockIcon {
+    transform: scale(0.75);
 }

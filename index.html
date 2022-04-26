@@ -9,22 +9,35 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="test">
-        <div class="left" id="left">
-            <img src="/paper-hand.svg" alt="paper-hand" class="choice-icons">
+    <div class="header">
+        <div class="scoreBox">
+            <div class="scoreNumbers">
+                <img src="/number0.svg" alt="number" class="numberIcon">
+                <img src="/number0.svg" alt="number" class="numberIcon leftNumberIcon">
+            </div>
+            <div class="scoreNumbers">
+                <img src="/number0.svg" alt="number" class="numberIcon">
+                <img src="/number0.svg" alt="number" class="numberIcon rightNumberIcon">
+            </div>
         </div>
-        <div class="right" id="right">
-            <img src="/paper-hand-reverse.svg" alt="paper-hand-reverse" class="choice-icons">
+    </div>
+    <div class="test">
+            
+        <div class="left choice-box" id="left">
+            <img src="/rock-hand.svg" alt="paper-hand" class="choice-icons rockIcon animLeftIcon">
+        </div>
+        <div class="right choice-box" id="right">
+            <img src="/rock-hand-reverse.svg" alt="paper-hand-reverse" class="choice-icons rockIcon animRightIcon">
         </div>
     </div>
     <div class="controls">
-        <button onclick="stone(enemyRandom())" id="stone">
-            <img src="/stone.svg" alt="stone" class="controls-icons stone-icon">
+        <button type="button" onclick="play(enemyRandom(), 'rock')" id="rock">
+            <img src="/rock.svg" alt="rock" class="controls-icons rock-icon">
         </button>
-        <button onclick="scissors(enemyRandom())" id="scissors" >
+        <button onclick="play(enemyRandom(), 'scissors')" id="scissors" >
             <img src="/scissors.svg" alt="scissors" class="controls-icons">
         </button>
-        <button onclick="paper(enemyRandom())" id="paper">
+        <button onclick="play(enemyRandom(), 'paper')" id="paper">
             <img src="/paper.svg" alt="paper" class="controls-icons">
         </button>    
     </div>
