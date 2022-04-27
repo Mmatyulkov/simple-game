@@ -5,40 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="header">
         <div class="scoreBox">
             <div class="scoreNumbers">
-                <img src="/number0.svg" alt="number" class="numberIcon">
-                <img src="/number0.svg" alt="number" class="numberIcon leftNumberIcon">
+                <img src="./number0.svg" alt="number" class="numberIcon">
+                <img src="./number0.svg" alt="number" class="numberIcon leftNumberIcon">
             </div>
             <div class="scoreNumbers">
-                <img src="/number0.svg" alt="number" class="numberIcon">
-                <img src="/number0.svg" alt="number" class="numberIcon rightNumberIcon">
+                <img src="./number0.svg" alt="number" class="numberIcon">
+                <img src="./number0.svg" alt="number" class="numberIcon rightNumberIcon">
             </div>
         </div>
     </div>
     <div class="test">
             
         <div class="left choice-box" id="left">
-            <img src="/rock-hand.svg" alt="paper-hand" class="choice-icons rockIcon animLeftIcon">
+            <img src="./rock-hand.svg" alt="paper-hand" class="choice-icons rockIcon animLeftIcon">
         </div>
         <div class="right choice-box" id="right">
-            <img src="/rock-hand-reverse.svg" alt="paper-hand-reverse" class="choice-icons rockIcon animRightIcon">
+            <img src="./rock-hand-reverse.svg" alt="paper-hand-reverse" class="choice-icons rockIcon animRightIcon">
         </div>
     </div>
     <div class="controls">
-        <button type="button" onclick="play(enemyRandom(), 'rock')" id="rock">
-            <img src="/rock.svg" alt="rock" class="controls-icons rock-icon">
+        <button type="button" onclick="play('rock')" id="rock">
+            <img src="./rock.svg" alt="rock" class="controls-icons rock-icon">
         </button>
-        <button onclick="play(enemyRandom(), 'scissors')" id="scissors" >
-            <img src="/scissors.svg" alt="scissors" class="controls-icons">
+        <button onclick="play('scissors')" id="scissors" >
+            <img src="./scissors.svg" alt="scissors" class="controls-icons">
         </button>
-        <button onclick="play(enemyRandom(), 'paper')" id="paper">
-            <img src="/paper.svg" alt="paper" class="controls-icons">
+        <button onclick="play('paper')" id="paper">
+            <img src="./paper.svg" alt="paper" class="controls-icons">
         </button>    
     </div>
 </body>
