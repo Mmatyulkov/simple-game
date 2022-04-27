@@ -1,8 +1,8 @@
 function play(pValue) {
     document.querySelector('.left img').src="./" + pValue + "-hand.svg"
-    scoreNumbers(result)
-    const result = valueCompare(pValue, rValue);
     const rValue = enemyRandom()
+    valueCompare(pValue, rValue);
+    scoreNumbers()
     searchRock()
 }
 
@@ -24,11 +24,12 @@ function valueCompare (pValue, rValue) {
         computerScore += 1
         return -1
     } 
+        console.log('Win')
         humanScore += 1
         return 1
 } 
 
-function scoreNumbers(result) {
+function scoreNumbers() {
     let humanPic = document.querySelector('.leftNumberIcon')
     humanPic.src = pictures[humanScore]
 
